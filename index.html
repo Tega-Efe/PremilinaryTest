@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  
+  <body>
+  <main class="on-top">
+    <div id="top">
+    <nav id="desktop-nav">
+      <div class="logo">Developer</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li class="pin"><a href="#gallery">Review</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Developer</div>
+      <div class="hamburger-menu">
+        <img class="hamburger-icon" src="./assets/icons8-hamburger-menu.svg" alt="Open menu">
+        <img class="close-icon" src="./assets/icons8-close.svg" alt="Close menu">
+        <div class="menu-links" id="menu-links">
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li class="pin"><a href="#gallery" onclick="toggleMenu()">Review</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    </div>
+  </main>
+
+  
+  <section id="profile">
+
+    <div class="section_pic-container round">
+      <img src="./assets/gengen.jpg" alt="John Doe profile picture" />
+    </div>
+    <div class="section_text">
+      <p class="section_text_p1 hello">Hello, I'm</p>
+      <h1 class="title">Adjeh Dominic</h1>
+      <p class="section_text_p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button
+          class="btn btn-color-2"
+          onclick="window.open('./assets/mycv.pdf')"
+        >
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img
+          src="./assets/linkedin.png"
+          alt="My LinkedIn profile"
+          class="icon"
+          onclick="location.href='https://linkedin.com/'"
+        />
+        <img
+          src="./assets/github.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://github.com/'"
+        />
+      </div>
+    </div>
+  </section>
+
+
+  <section id="about">
+    <p class="section_text_p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section_pic-container">
+        <img
+          src="./assets/myshot.jpg"
+          alt="Profile picture"
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>1+ year <br />Frontend Development</p>
+            <p>Backend Developer (Python)</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>SSCE Certificate<br />B.Eng. Computer Engineering(Present)</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            A detail-oriented, organized and meticulous employee. Performed excellently and worked closely 
+            with several teams towards established goals. Contributed to team exercises, performed with merit 
+            and contributed my quota to the attainment of corporate vision having acquired relevant Project 
+            management and Programming knowledge.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#experience'"
+    />
+  </section>
+
+  <section id="experience">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              
+                
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQLlite</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django </h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project One</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Two</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Project Three</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Github
+                </button>
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#gallery'"
+        />
+
+        </section>
+
+        <section id="gallery">
+            <p class="section_text_p1"></p>
+            <h1 class="title">Welcome to my Gallery</h1>
+            
+            <div class="experience-details-container">
+              <div class="about-containers">
+                
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/one.jpg"
+                      alt="image 1"
+                      class="project-img"
+                    />
+                  </div>
+                  <!-- <h2 class="experience-sub-title project-title">One</h2> -->
+                  
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/two.jpg"
+                      alt="image 2"
+                      class="project-img"
+                    />
+                  </div>
+                  <!-- <h2 class="experience-sub-title project-title">Two</h2> -->
+                  
+                </div>
+                <div class="details-container color-container">
+                  <div class="article-container">
+                    <img
+                      src="./assets/three.jpg"
+                      alt="image 3"
+                      class="project-img"
+                    />
+                  </div>
+                  <!-- <h2 class="experience-sub-title project-title">ProjectThree</h2> -->
+                  
+                </div>
+              </div>
+            </div>
+            
+            
+            
+            <img
+            src="./assets/arrow.png"
+            alt="Arrow icon"
+            class="icon arrow"
+            onclick="location.href='./#contact'"
+          />
+        </section>
+       
+
+        <section id="contact">
+            <p class="section_text_p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <!-- <h2 class="">What our clients say</h2> -->
+      
+            <div class="testimonials">
+              <div class="container">
+                  <!-- <div class="section-header">
+                    <h2 class="titles">What our clients say</h2>
+                  </div> -->
+                  <div class="testimonials-content">
+                      <div class=" swiper testimonial-slider js-testimonials-slider">
+                          <div class="swiper-wrapper">
+                          
+                          <div class="swiper-slide testimonials-item">
+                              <div class="info">
+                                  <img src="./assets/65093d2513c37e2b846ba039_freelance-web-developer.jpg" alt="img">
+                                  <div class="text-box">
+                                  <h3 class="name">Olajide Johnson</h3>
+                                  <span class="job">web developer</span>
+                                  </div>
+                              </div>
+                              <p>I'm impressed by your experience with various frontend technologies. You'll be a valuable asset to any team.</p>
+                              
+                                  <div class="rates">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="bx bx-star star"></i>
+                                  <i class="bx bx-star star"></i>
+                              </div>
+                          </div>
+                          <div class="swiper-slide testimonials-item">
+                              <div class="info">
+                                  <img src="./assets/65093d2513c37e2b846ba039_freelance-web-developer.jpg" alt="img">
+                                  <div class="text-box">
+                                  <h3 class="name">Kikiiyin John</h3>
+                                  <span class="job">web developer</span>
+                                  </div>
+                              </div>
+                              <p>Overall, I think your experience and skills make you a strong candidate for frontend developer positions. With some tweaks to your resume, I'm confident that you'll be able to land your dream job. Keep up the good work!</p>
+                              
+                                  <div class="rates">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="bx bx-star star"></i>
+                              </div>
+                          </div>
+
+                          <div class="swiper-slide testimonials-item">
+                              <div class="info">
+                                  <img src="./assets/65093d2513c37e2b846ba039_freelance-web-developer.jpg" alt="img">
+                                  <div class="text-box">
+                                  <h3 class="name">Akande Paul</h3>
+                                  <span class="job">web developer</span>
+                                  </div>
+                              </div>
+                              <p>Your resume is well-organized and highlights your skills effectively. Good luck with your job search!"</p>
+                              
+                                  <div class="rates">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                              </div>
+                          </div>
+
+                          <div class="swiper-slide testimonials-item">
+                            <div class="info">
+                                <img src="./assets/65093d2513c37e2b846ba039_freelance-web-developer.jpg" alt="img">
+                                <div class="text-box">
+                                <h3 class="name">Laju David</h3>
+                                <span class="job">web developer</span>
+                                </div>
+                            </div>
+                            <p>I think you could improve the formatting and layout of your resume to make it more visually appealing and easier to read.
+                            </p>
+                            
+                                <div class="rates">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                          </div>
+                          <div class="swiper-slide testimonials-item">
+                              <div class="info">
+                                  <img src="./assets/65093d2513c37e2b846ba039_freelance-web-developer.jpg" alt="img">
+                                  <div class="text-box">
+                                  <h3 class="name">Peterside Williams</h3>
+                                  <span class="job">web developer</span>
+                                  </div>
+                              </div>
+                              <p>As a junior frontend developer, your portfolio shows great potential. Keep up the good work!</p>
+                              
+                                  <div class="rates">
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                                  <i class="fa fa-star"></i>
+                              </div>
+                          </div>
+                          </div>                                                
+                      </div>    
+                      <div class="swiper-pagination js-testimonials-pagination"></div>
+                  </div>
+              </div>
+      
+            </div>
+            
+      
+            <div class="contact-info-upper-container">
+              <div class="contact-info-container">
+                <img
+                  src="./assets/email.png"
+                  alt="Email icon"
+                  class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:examplemail@gmail.com">dominicadjeh@gmail.com</a></p>
+              </div>
+              <div class="contact-info-container">
+                <img
+                  src="./assets/linkedin.png"
+                  alt="LinkedIn icon"
+                  class="icon contact-icon"
+                />
+                <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+              </div>
+            </div>
+            
+          </section>
+          <footer>
+            <nav>
+              <div class="nav-links-container">
+                <ul class="nav-links">
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#experience">Experience</a></li>
+                  <li><a href="#projects">Projects</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
+            <p class="down">Copyright &#169; <span id="year"></span> Adjeh Dominic. All Rights Reserved.</p>
+          </footer>
+      
+          <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+          <script src="script.js"></script>
+          
+        </body>
+      </html>
+      
